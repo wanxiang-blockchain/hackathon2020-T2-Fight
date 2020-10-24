@@ -10,6 +10,7 @@ en:
       copyright: "© 2019 Jasl, MIT license"
     sidebar:
       application:
+        header: "Home"
         home: "Home"
       accounts:
         profile: "Profile"

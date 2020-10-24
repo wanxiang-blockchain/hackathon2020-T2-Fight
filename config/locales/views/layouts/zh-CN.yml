@@ -10,7 +10,7 @@ zh-CN:
       copyright: "© 2020 WanXiang blockchain hackathon 2020 Team2 Fight"
     sidebar:
       application:
-        header: "Home"
+        header: "首页"
         home: "首页"
       accounts:
         header: "用户设置"
