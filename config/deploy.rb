@@ -2,7 +2,7 @@
 lock '~> 3.14.0'
 
 set :application, 'hackathon_g2'
-set :repo_url, 'git@github.com:Eric-Guo/wx-hackathon-2020-group-2.git'
+set :repo_url, 'git@github.com:wanxiang-blockchain/hackathon2020-T2-Fight.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
