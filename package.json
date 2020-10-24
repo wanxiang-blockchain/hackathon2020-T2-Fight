@@ -1,0 +1,33 @@
+{
+  "name": "cybros",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files"
+  },
+  "dependencies": {
+    "@coreui/coreui": "~>2.1.16",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@rails/actioncable": "^6.0.3-4",
+    "@rails/activestorage": "^6.0.3-4",
+    "@rails/ujs": "^6.0.3-4",
+    "@rails/webpacker": "^5.2.1",
+    "@stimulus/polyfills": "^1.1.1",
+    "bootstrap": "^4.5.2",
+    "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "perfect-scrollbar": "^1.5.0",
+    "popper.js": "^1.16.1",
+    "regenerator-runtime": "^0.13.7",
+    "stimulus": "^1.1.1",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "resolutions": {
+    "chokidar": "^3.4.0"
+  }
+}
