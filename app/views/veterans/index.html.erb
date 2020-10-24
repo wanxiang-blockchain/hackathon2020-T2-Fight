@@ -25,6 +25,20 @@
             </tr>
           </thead>
           <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td>
+                  <%= user.user_name %>
+                  <br />
+                  <%= image_tag user.user_picture_url %>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <% end %>
           </tbody>
         </table>
       </div>
