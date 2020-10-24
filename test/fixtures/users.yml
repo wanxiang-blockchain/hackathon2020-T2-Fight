@@ -10,9 +10,72 @@ user_eric:
   email: "hackathon2020t2@wanxiang-blockchain.github"
   user_name: '管理员'
 
-user_1:
+user_2:
   <<: *default
   id: 2
-  email: 'user_1@wanxiang-blockchain.github'
+  email: 'user_2@wanxiang-blockchain.github'
   user_name: '仝彩华'
-  user_picture_url: ''
+  user_picture_url: 'user-avatar/仝彩华.jpg'
+
+user_3:
+  <<: *default
+  id: 3
+  email: 'user_3@wanxiang-blockchain.github'
+  user_name: '叶佩娟'
+  user_picture_url: 'user-avatar/叶佩娟.jpg'
+
+user_4:
+  <<: *default
+  id: 4
+  email: 'user_4@wanxiang-blockchain.github'
+  user_name: '宋秋娣'
+  user_picture_url: 'user-avatar/宋秋娣.jpg'
+
+user_5:
+  <<: *default
+  id: 5
+  email: 'user_5@wanxiang-blockchain.github'
+  user_name: '张国琴'
+  user_picture_url: 'user-avatar/张国琴.jpg'
+
+user_6:
+  <<: *default
+  id: 6
+  email: 'user_6@wanxiang-blockchain.github'
+  user_name: '熊国庆'
+  user_picture_url: 'user-avatar/熊国庆.jpg'
+
+user_7:
+  <<: *default
+  id: 7
+  email: 'user_7@wanxiang-blockchain.github'
+  user_name: '邵兰芳'
+  user_picture_url: 'user-avatar/邵兰芳.jpg'
+
+user_8:
+  <<: *default
+  id: 8
+  email: 'user_8@wanxiang-blockchain.github'
+  user_name: '郑惠芬'
+  user_picture_url: 'user-avatar/郑惠芬.jpg'
+
+user_9:
+  <<: *default
+  id: 9
+  email: 'user_9@wanxiang-blockchain.github'
+  user_name: '陈佩华'
+  user_picture_url: 'user-avatar/陈佩华.jpg'
+
+user_10:
+  <<: *default
+  id: 10
+  email: 'user_10@wanxiang-blockchain.github'
+  user_name: '陈明'
+  user_picture_url: 'user-avatar/陈明.jpg'
+
+user_11:
+  <<: *default
+  id: 11
+  email: 'user_11@wanxiang-blockchain.github'
+  user_name: '顾桂珍'
+  user_picture_url: 'user-avatar/顾桂珍.jpg'
