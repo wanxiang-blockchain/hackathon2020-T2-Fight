@@ -15,6 +15,7 @@
 !/tmp/.keep
 
 /db/*.sqlite3
+/db/*.sqlite3-?
 
 # Ignore uploaded files in development.
 /storage/*
