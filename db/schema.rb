@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_24_151554) do
+ActiveRecord::Schema.define(version: 2020_10_24_151558) do
+
+  create_table "heart_rate_histories", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "heartbeat_per_minute"
+    t.datetime "meature_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_heart_rate_histories_on_user_id"
+  end
+
+  create_table "positions", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.decimal "latitude"
+    t.decimal "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_positions_on_user_id"
+  end
+
+  create_table "step_counts", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "step_count"
+    t.decimal "calculated_calories"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_step_counts_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -40,6 +67,7 @@ ActiveRecord::Schema.define(version: 2020_10_24_151554) do
     t.integer "invitations_count", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "user_status"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
@@ -48,4 +76,7 @@ ActiveRecord::Schema.define(version: 2020_10_24_151554) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
+  add_foreign_key "heart_rate_histories", "users"
+  add_foreign_key "positions", "users"
+  add_foreign_key "step_counts", "users"
 end
