@@ -4,8 +4,13 @@ class ApplicationController < ActionController::Base
   before_action :prepare_meta_tags, if: -> { request.format.html? }
 
   include StoreLocation
+  before_action :set_page_layout_data, if: -> { request.format.html? }
 
   protected
+
+    def set_page_layout_data
+      @_sidebar_name = 'application'
+    end
 
     def prepare_meta_tags(options = {})
       site_name   = Settings.seo_meta.name
