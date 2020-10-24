@@ -1,7 +1,7 @@
 ---
 seo_meta:
-  name: Cybros Core
-  description: Cybros Core
+  name: 万象黑客马拉松智慧养老模拟后台
+  description: 万象黑客马拉松智慧养老模拟后台
   keywords: []
 
 # url_options:
@@ -9,4 +9,4 @@ seo_meta:
 #  protocol: http
 
 admin:
-  emails: []
+  emails: ['hackathon2020t2@wanxiang-blockchain.github']

@@ -1,7 +1,7 @@
 en:
   layouts:
     header:
-      brand: "Cybros Core"
+      brand: "万象黑客马拉松智慧养老模拟后台"
       account_menu:
         admin: "Administration"
         profile: "Edit Profile"

@@ -1,13 +1,13 @@
 zh-CN:
   layouts:
     header:
-      brand: "Cybros Core"
+      brand: "万象黑客马拉松智慧养老模拟后台"
       account_menu:
         admin: "后台管理"
         profile: "编辑个人资料"
         sign_out: "登出"
     footer:
-      copyright: "© 2019 Jasl, MIT license"
+      copyright: "© 2020 WanXiang blockchain hackathon 2020 Team2 Fight"
     sidebar:
       application:
         header: "Home"

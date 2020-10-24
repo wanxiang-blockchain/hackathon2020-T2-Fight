@@ -95,7 +95,7 @@ module CybrosCore
     #   config.action_mailer.default_url_options = Settings.url_options.to_h
     # end
 
-    # config.time_zone = "Asia/Shanghai"
-    # config.i18n.default_locale = "zh-CN"
+    config.time_zone = "Asia/Shanghai"
+    config.i18n.default_locale = "zh-CN"
   end
 end
