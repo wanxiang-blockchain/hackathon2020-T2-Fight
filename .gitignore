@@ -36,7 +36,6 @@ yarn-debug.log*
 .yarn-integrity
 
 /config/database.yml
-/config/mailer.yml
 /config/storage.yml
 
 config/settings.local.yml
