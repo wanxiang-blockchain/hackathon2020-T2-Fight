@@ -1,0 +1,13 @@
+---
+zh-CN:
+  veterans:
+    index:
+      title: "老人情况"
+      veteran_name: "姓名"
+      search: "搜索"
+      table:
+        user_name_avatar: "老年人"
+        user_status: "状态"
+        step_counts: "步行状态"
+        heart_rates: "心率"
+        last_position: "最后位置"

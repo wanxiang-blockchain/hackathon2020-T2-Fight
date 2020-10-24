@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :veterans, only: %i[index]
   namespace :account, module: "accounts" do
     resource :password, only: %i[show update]
     resource :profile, only: %i[show update]

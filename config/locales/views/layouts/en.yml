@@ -12,6 +12,7 @@ en:
       application:
         header: "Home"
         home: "Home"
+        veterans: "Veterans"
       accounts:
         profile: "Profile"
         password: "Password"

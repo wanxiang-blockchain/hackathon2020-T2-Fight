@@ -7,6 +7,12 @@
   </div>
   <nav class="sidebar-nav">
     <ul class="nav">
+      <%= nav_item controller: 'veterans', html_options: {class: "nav-item"} do %>
+        <%= link_to veterans_path, class: "nav-link" do %>
+          <i class="nav-icon fas fa-user-circle"></i>
+          <%= t("layouts.sidebar.application.veterans") %>
+        <% end %>
+      <% end %>
     </ul>
   </nav>
   <button class="sidebar-minimizer" type="button"></button>
