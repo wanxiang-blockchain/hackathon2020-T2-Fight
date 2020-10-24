@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_24_151558) do
+ActiveRecord::Schema.define(version: 2020_10_24_151559) do
 
   create_table "heart_rate_histories", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -68,6 +68,10 @@ ActiveRecord::Schema.define(version: 2020_10_24_151558) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "user_status"
+    t.string "user_name"
+    t.string "contact_address"
+    t.string "mobile"
+    t.string "emergency_contact"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true

@@ -1,7 +1,18 @@
 ---
-user_eric:
-  id: 1
-  email: "hackathon2020t2@wanxiang-blockchain.github"
+default: &default
   confirmed_at: <%= Time.zone.now %>
   # password: hackathon2020t2
   encrypted_password: '$2a$11$ylVw6QxeHa.v0xUWBHMO6OG74oj9Yrvep3Jm0/EZaqYPA7CSTW7xS'
+
+user_eric:
+  <<: *default
+  id: 1
+  email: "hackathon2020t2@wanxiang-blockchain.github"
+  user_name: '管理员'
+
+user_1:
+  <<: *default
+  id: 2
+  email: 'user_1@wanxiang-blockchain.github'
+  user_name: '仝彩华'
+  user_picture_url: ''
