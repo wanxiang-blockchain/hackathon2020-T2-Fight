@@ -4,4 +4,4 @@ user_eric:
   email: "hackathon2020t2@wanxiang-blockchain.github"
   confirmed_at: <%= Time.zone.now %>
   # password: hackathon2020t2
-  encrypted_password: '$2a$11$iMLQadQYOMlUEGuOKbYkw.dTe35Cak7qugL6xBOwXKnzKB3BpPmx2'
+  encrypted_password: '$2a$11$ylVw6QxeHa.v0xUWBHMO6OG74oj9Yrvep3Jm0/EZaqYPA7CSTW7xS'
