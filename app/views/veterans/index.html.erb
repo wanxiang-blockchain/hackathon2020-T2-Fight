@@ -11,36 +11,43 @@
       <div><%= submit_tag t(".search"), class: 'btn btn-primary' %></div>
     <% end -%>
 
+
     <div class="row mt-2">
       <div class="col-lg-12">
-        <table class="table table-bordered table-responsive pb-5">
-          <thead>
-            <tr>
-              <th><%= t(".table.user_name_avatar") -%></th>
-              <th><%= t(".table.user_status") -%></th>
-              <th><%= t(".table.step_counts") -%></th>
-              <th><%= t(".table.heart_rates") -%></th>
-              <th><%= t(".table.last_position") -%></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @users.each do |user| %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
               <tr>
-                <td>
-                  <%= user.user_name %>
-                  <br />
-                  <%= image_tag user.user_picture_url, width: "120px" %>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th><%= t(".table.user_avatar") -%></th>
+                <th><%= t(".table.user_name_and_status") -%></th>
+                <th><%= t(".table.step_counts") -%></th>
+                <th><%= t(".table.heart_rates") -%></th>
+                <th><%= t(".table.last_position") -%></th>
+                <th></th>
               </tr>
-            <% end %>
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              <% @users.each do |user| %>
+                <tr>
+                  <td>
+                    <%= image_tag user.user_picture_url, width: "120px" %>
+                  </td>
+                  <td>
+                    <%= user.user_name %>
+                    <br />
+                    <%= user.user_status %>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+
+        <%= paginate @users %>
       </div>
     </div>
   </div>

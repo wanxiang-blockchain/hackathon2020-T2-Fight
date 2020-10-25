@@ -6,6 +6,7 @@ class User < ApplicationRecord
   devise :database_authenticatable,
          :registerable, :lockable, :invitable,
          :recoverable, :rememberable, :confirmable, :trackable, :validatable
+  paginates_per 7
 
   scope :active, -> { where(locked_at: nil) }
 
