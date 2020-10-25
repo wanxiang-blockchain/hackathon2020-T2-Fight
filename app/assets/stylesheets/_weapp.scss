@@ -1,0 +1,56 @@
+.weapp-footer-style {
+  border-top: 1px solid #dbdee0;
+
+  .nav-fill .nav-link.active {
+    margin-top: -1px;
+    border-top: 2px solid #36a9e1;
+    background-image: linear-gradient(to right, #0acffe 0%, #3F85FB 100%);
+  }
+}
+
+.weapp {
+  .btn-primary {
+    background-color: #389CFB;
+  }
+  padding-bottom: 40px;
+
+  .vote-info {
+    background-image: linear-gradient(to right, #0acffe 0%, #3F85FB 100%);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .middle {
+      border-left-style: solid;
+      border-right-style: solid;
+      border-width:1px;
+      border-color: #FFF;
+    }
+    p {
+      color: #FFF;
+      margin-bottom: 0rem;
+    }
+  }
+
+  .card {
+    border: 0px solid #dbdee0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 16px 0 rgba(47, 67, 82, 0.1);
+    display: inline-block;
+    position: relative;
+  }
+
+  .vote-item-banner {
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    color: #FFF;
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  .avatar-img {
+    margin-bottom: 10px;
+  }
+}
+
