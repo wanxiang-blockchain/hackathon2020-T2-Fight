@@ -61,7 +61,7 @@ jobs:
       - run:
           name: Copy configs
           command: |
-            cp .circleci/app_config/database.yml config/database.yml
+            cp config/database.yml.example config/database.yml
             cp config/mailer.yml.example config/mailer.yml
             cp config/credentials.yml.example config/credentials.yml
             bin/rails credentials:encrypt
