@@ -35,11 +35,33 @@
                   <td>
                     <%= user.user_name %>
                     <br />
-                    <%= user.user_status %>
+                    
+                    <span class="badge badge-pill badge-primary"><%= user.user_status -%></span>
                   </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>
+                    <% last_position = user.positions.last %>
+                    <% if last_position.present? %>
+                      <%= last_position.created_at -%>
+                    <% else %>
+                      N/A
+                    <% end %>
+                  </td>
+                  <td>
+                    <% last_heart_rate_history = user.heart_rate_histories.last %>
+                    <% if last_heart_rate_history.present? %>
+                      <%= last_heart_rate_history.meature_time -%>
+                    <% else %>
+                      N/A
+                    <% end %>
+                  </td>
+                  <td>
+                    <% last_step_count = user.step_counts.last %>
+                    <% if last_step_count.present? %>
+                      <%= last_step_count.created_at -%>
+                    <% else %>
+                      N/A
+                    <% end %>
+                  </td>
                   <td></td>
                 </tr>
               <% end %>

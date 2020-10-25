@@ -7,6 +7,9 @@ class User < ApplicationRecord
          :registerable, :lockable, :invitable,
          :recoverable, :rememberable, :confirmable, :trackable, :validatable
   paginates_per 7
+  has_many :heart_rate_histories
+  has_many :positions
+  has_many :step_counts
 
   scope :active, -> { where(locked_at: nil) }
 
