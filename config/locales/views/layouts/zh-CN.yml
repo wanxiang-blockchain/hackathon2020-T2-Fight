@@ -13,7 +13,7 @@ zh-CN:
       application:
         header: "首页"
         home: "首页"
-        veterans: "老年人"
+        veterans: "用户数据"
       accounts:
         header: "用户设置"
         profile: "个人信息"
