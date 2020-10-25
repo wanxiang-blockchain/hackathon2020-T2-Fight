@@ -1,0 +1,20 @@
+---
+heart_rate_1_1:
+  user_id: 1
+  heartbeat_per_minute: 70
+  meature_time: <%= 1.minute.ago %>
+
+heart_rate_1_2:
+  user_id: 1
+  heartbeat_per_minute: 77
+  meature_time: <%= 31.minutes.ago %>
+
+heart_rate_1_3:
+  user_id: 1
+  heartbeat_per_minute: 74
+  meature_time: <%= 60.minutes.ago %>
+
+heart_rate_1_4:
+  user_id: 1
+  heartbeat_per_minute: 73
+  meature_time: <%= 90.minutes.ago %>

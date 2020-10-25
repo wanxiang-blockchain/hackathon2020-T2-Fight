@@ -1,0 +1,24 @@
+---
+positions_1_1:
+  user_id: 1
+  longitude: 121.49202
+  latitude: 31.24149
+  created_at: <%= 1.minute.ago %>
+
+positions_1_2:
+  user_id: 1
+  longitude: 121.49204
+  latitude: 31.24150
+  created_at: <%= 31.minutes.ago %>
+
+positions_1_3:
+  user_id: 1
+  longitude: 121.49203
+  latitude: 31.24151
+  created_at: <%= 60.minutes.ago %>
+
+positions_1_4:
+  user_id: 1
+  longitude: 121.49203
+  latitude: 31.24147
+  created_at: <%= 90.minutes.ago %>

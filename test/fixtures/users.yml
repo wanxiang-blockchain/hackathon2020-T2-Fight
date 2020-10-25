@@ -3,6 +3,7 @@ default: &default
   confirmed_at: <%= Time.zone.now %>
   # password: hackathon2020t2
   encrypted_password: '$2a$11$ylVw6QxeHa.v0xUWBHMO6OG74oj9Yrvep3Jm0/EZaqYPA7CSTW7xS'
+  user_status: '正常'
 
 user_eric:
   <<: *default
