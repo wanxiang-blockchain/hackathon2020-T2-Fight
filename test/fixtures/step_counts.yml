@@ -1,25 +1,25 @@
 ---
 # https://zhcn.julinse.com/计步器步骤卡路里转换器/
-step_counts_1_1:
-  user_id: 1
+step_counts_2_1:
+  user_id: 2
   step_count: 2212
   calculated_calories: 87.3
   created_at: <%= 1.minute.ago %>
 
-step_counts_1_2:
-  user_id: 1
+step_counts_2_2:
+  user_id: 2
   step_count: 2212
   calculated_calories: 87.3
   created_at: <%= 31.minutes.ago %>
 
-step_counts_1_3:
-  user_id: 1
+step_counts_2_3:
+  user_id: 2
   step_count: 2212
   calculated_calories: 87.3
   created_at: <%= 60.minutes.ago %>
 
-step_counts_1_4:
-  user_id: 1
+step_counts_2_4:
+  user_id: 2
   step_count: 2212
   calculated_calories: 87.3
   created_at: <%= 90.minutes.ago %>
