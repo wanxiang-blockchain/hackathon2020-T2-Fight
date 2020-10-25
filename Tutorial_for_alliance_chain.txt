@@ -1,0 +1,88 @@
+| ===================================================================================================|
+|                                                                                                    |
+|          TUTORIAL FOR ALLIANCE CHAIN WITH FABRIC 2.2.1 TOOL ( RESTFUL SURVICE SPPORTED )           |
+|                                                                                                    |
+|                                         WITH                                                       |
+|                                                                                                    |
+|                  INSTALLATION & BRING UP & DEPLOY CONTRACT & USING                                 |
+|                                                                                                    |
+|		        TOOL's TEAMWORKERS: （Thanks to all for your suppoting）                     |
+|		                                                                                     |
+|   ++++++++-    Liyiping, Eric, Mouliqun, Lee, Never, Meio, JiXian KeJi Co.,Ltd.    -+++++++++      |
+|                                                                                                    |
+=====================================================================================================|
+
+1.  make base directory as following and clone the git repo.
+    
+    mkdir /root/PROJECTS
+    cd /root/PROJECTS
+   
+    git clone https://github.com/lyp830414/repo_fabric_v221.git 
+    
+    then, you need make a quick-link ( must ):
+           ln -s /root/PROJECTS/repo_fabric_v221/fabric_native_dev_project  /root/PROJECTS/fabric_native_dev_project
+    
+    then, cd /root/PROJECTS/fabric_native_dev_project as your working directory.
+
+2.  Install  fabric:
+      
+     cd /root/PROJECTS/fabric_native_dev_project
+     ./install_centos.sh
+
+     be sure that you have installed docker-ce and docker-compose  and docker swarm can be used.
+
+3. build the binaries:
+    ./run.sh build
+
+4. === FOR MULTIPLE -2- NODES MODE ===
+      
+      1) be sure your 2 vms are on line and firewalld all closed.
+      
+      2) bring up your network 
+              vim run.sh ---> change your "remote_peer2= <your remote VM's interlnal IP ADDR, like 192.XXXXX or 10.XXXXXX>"
+	      BOTH your VM1 and VM2 modiry /etc/hosts, add following domain
+                 192.168.1.135 orderer.example.com
+		 192.168.1.135 peer0.org1.example.com
+                 192.168.1.136 peer0.org2.example.com
+              
+              Then,
+                  ./run.sh sp_up
+                  (bring down and remote all use : ./run.sh sp_down )
+      
+      3) create your channel
+              
+              ./run.sh sp_new_ch yiping  ("yiping" is your new channle name, you can choose whatever.)  
+    
+      4) view block height according this channel
+              ./run.sh info yiping
+      
+      5) deploy your contract, here I use lyp.go as sample contract:
+             ./run.sh deploy <channel>   <contract>
+             
+             i.e ./run.sh deploy yiping yipinga
+            
+             Note: 
+                  Must do this only on org1, it will sync to org2.
+           		 
+5. === FOR SINGLE-2-NODES-ALL-IN-ONE MODE ===
+      1) modify the run.sh, change modeno=single  (if modeno=, <--(empty), then it is multiple mode)
+
+      2) ./run.sh sp_down;  ./run.sh down  to ensure the cleanning testbed
+    
+      3) bring up your network
+
+              ./run.sh up 
+
+      4) create your channel
+              
+              ./run.sh new_ch yiping  ("yiping" is your new channle name, you can choose whatever.)  
+    
+      4) view block height according this channel
+
+              ./run.sh info yiping
+
+5.  Simple query commands: (supports both modeno)
+      
+      ./run.sh  info        # get latest block height
+      ./run.sh  get_block 2 # get "2" block
+       		
