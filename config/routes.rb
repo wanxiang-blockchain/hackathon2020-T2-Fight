@@ -20,6 +20,11 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :weapp do
+    resource :about, only: %i[show]
+    resources :users, only: %i[show]
+  end
+
   devise_for :users, skip: %i[registrations invitations], controllers: {
     confirmations: "users/confirmations",
     passwords: "users/passwords",

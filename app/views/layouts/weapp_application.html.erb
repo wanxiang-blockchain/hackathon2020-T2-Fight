@@ -1,0 +1,17 @@
+<%- body_class = "app header-fixed" %>
+<% content_for(:body_class, body_class) %>
+<% content_for :content do %>
+  <div class="app-body mt-0">
+    <main class="main">
+      <div class="container-fluid px-0" id="main">
+        <%= yield %>
+      </div>
+    </main>
+  </div>
+  <% unless @hide_footer %>
+    <%= render "layouts/application/weapp_footer" %>
+  <% end %>
+<% end %>
+
+<%= render template: "layouts/base" %>
+
