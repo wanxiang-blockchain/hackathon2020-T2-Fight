@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/wanxiang-blockchain/hackathon2020-T2-Fight.svg?style=svg)](https://circleci.com/gh/wanxiang-blockchain/hackathon2020-T2-Fight)
+
 # wxhackathon2020
 Hackers of Wanxiang Blockchain Hackathon
 
