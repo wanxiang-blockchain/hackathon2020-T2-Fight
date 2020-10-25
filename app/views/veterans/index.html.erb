@@ -20,9 +20,9 @@
               <tr>
                 <th><%= t(".table.user_avatar") -%></th>
                 <th><%= t(".table.user_name_and_status") -%></th>
-                <th><%= t(".table.step_counts") -%></th>
-                <th><%= t(".table.heart_rates") -%></th>
                 <th><%= t(".table.last_position") -%></th>
+                <th><%= t(".table.heart_rates") -%></th>
+                <th><%= t(".table.step_counts") -%></th>
                 <th></th>
               </tr>
             </thead>
@@ -41,6 +41,8 @@
                   <td>
                     <% last_position = user.positions.last %>
                     <% if last_position.present? %>
+                      <%= last_position.longitude -%>, <%= last_position.latitude -%>
+                      <br />
                       <%= last_position.created_at -%>
                     <% else %>
                       N/A
@@ -49,6 +51,8 @@
                   <td>
                     <% last_heart_rate_history = user.heart_rate_histories.last %>
                     <% if last_heart_rate_history.present? %>
+                      <%= last_heart_rate_history.heartbeat_per_minute -%> 次/分钟
+                      <br />
                       <%= last_heart_rate_history.meature_time -%>
                     <% else %>
                       N/A
@@ -57,6 +61,8 @@
                   <td>
                     <% last_step_count = user.step_counts.last %>
                     <% if last_step_count.present? %>
+                      <%= last_step_count.step_count -%>，近似 <%= last_step_count.calculated_calories -%> 卡路里
+                      <br />
                       <%= last_step_count.created_at -%>
                     <% else %>
                       N/A
