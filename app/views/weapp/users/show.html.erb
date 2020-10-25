@@ -1,14 +1,14 @@
 <div class="weapp">
   <div class="jumbotron vote-item-banner">
     <div class="container text-center">
-      <h4><%= @user.user_name -%></h4>
+      <h4>智慧养老监控系统</h4>
     </div>
   </div>
 
   <div class="container">
     <div class="card w-100">
       <div class="card-body">
-        <h6>姓名：</h6>
+        <h6><%= @user.user_name -%></h6>
         <div class="text-center avatar-img">
           <%= image_tag @user.user_picture_url, class: "img-thumbnail border-0", size: "100" %>
         </div>
@@ -16,7 +16,7 @@
     </div>
     <div class="card w-100">
       <div class="card-body">
-        <h6>情况：</h6>
+        <h6>人员当前情况：</h6>
       </div>
     </div>
   </div>
